@@ -269,7 +269,7 @@
 @media (min-width: 319.98px) and (max-width: 379.98px) {
     
     .header_bg{
-        height: 130vh;
+        height: 140vh;
         overflow: hidden;
     }
     .header_mobile_slider{
@@ -296,7 +296,7 @@
 @media (min-width: 380px) and (max-width: 424.98px) {
     
     .header_bg{
-        height: 130vh;
+        height: 140vh;
         overflow: hidden;
     }
     .header_mobile_slider{
