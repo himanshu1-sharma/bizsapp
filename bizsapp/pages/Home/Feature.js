@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Feature() {
     return (
-        <>
+        <> 
             <div className="container mt-5">
                 <div className="row">
                     <div className="col-lg-12">
