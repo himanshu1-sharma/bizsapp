@@ -1,0 +1,93 @@
+.before_footer_bg{
+    background-image: url(../public/img/features/footer_download.png);
+    height: 461px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.before_footer_content{
+    text-align: center;
+    margin-top: 8rem;
+}
+.before_footer_content h2{
+    font-size: 50px;
+    font-family: boldfont;
+}
+.before_footer_content ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+.before_footer_content ul li{
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+
+
+/* ============responsive css==============
+============================== */
+
+@media (min-width: 319.98px) and (max-width: 379.98px) {
+    
+    .before_footer_bg{
+        height: max-content;
+        background-size: cover;
+    }
+    .before_footer_content{
+        margin-top: 3rem;
+    }
+    
+}
+@media (min-width: 380px) and (max-width: 424.98px) {
+    
+    .before_footer_bg{
+        height: max-content;
+        background-size: cover;
+    }
+    .before_footer_content{
+        margin-top: 3rem;
+    }
+}
+@media (min-width: 425px) and (max-width: 575.98px) {
+    
+    .before_footer_bg{
+        height: max-content;
+        background-size: cover;
+    }
+    .before_footer_content{
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768.98px) {
+    .before_footer_bg{
+        height: max-content;
+        background-size: cover;
+        padding-top: 3rem;
+    }
+    .before_footer_content{
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {
+
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 1200.98px) and (max-width: 1439px) {
+
+}
+
+@media (min-width: 1439.98px) and (max-width: 1599.98px) {
+    
+}
