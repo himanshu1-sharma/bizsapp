@@ -1,18 +1,18 @@
 const Card = [
     {
         imgSrc : "Icon-1",
-        title : "Title Name Here",
-        desc : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum"
+        title : "Modern & Trendy Design",
+        desc : "BizsApp Team Developed Morden And Trendy Design of Application For Give Premium Experience To  User after Exploring BizsApp "
     },
     {
         imgSrc : "Icon-2",
-        title : "Title Name Here",
-        desc : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum"
+        title : "Save Your Time",
+        desc : "BizsApp Team Always Committed To Save Your Time By Using BizsApp Because We Are Understand Your Time Is Precious "
     },
     {
         imgSrc : "Icon-3",
-        title : "Title Name Here",
-        desc : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum"
+        title : "Build Your Community",
+        desc : "By using BizsApp User Will Build Community According To There interest Here, BizsApp Mostly Profile Are verified "
     }
 
 
