@@ -283,16 +283,19 @@ button {
 
 .left_accordion .accordion-button:focus {
   background-color: var(--background);
-  color: var(--primary);
+  color: var(--dark);
   outline: none !important;
   box-shadow: none !important;
 }
 
 .left_accordion .accordion-button:not(.collapsed) {
   background-color: var(--background);
-  color: var(--primary);
+  color: var(--dark);
+  font-family: semibold;
 }
-
+.left_accordion .accordion .accordion-item .accordion-header .accordion-button img{
+  margin-right: 10px;
+}
 .left_accordion .accordion-button {
   display: flex;
   align-items: center;
@@ -300,6 +303,10 @@ button {
 
 .left_accordion .accordion-button svg {
   margin-right: 15px;
+}
+
+.q_and_a .accordion-item {
+  border: none;
 }
 
 /* ========end========= */
