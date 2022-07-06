@@ -305,10 +305,31 @@ button {
   margin-right: 15px;
 }
 
+.q_and_a{
+  margin-top: 4rem;
+}
 .q_and_a .accordion-item {
   border: none;
 }
+.q_and_a .accordion .accordion-item .accordion-header .accordion-button{
+  font-family: semibold;
+}
 
+.q_and_a .accordion .accordion-item .accordion-collapse .accordion-body p{
+  font-size: 16px !important;
+}
+.q_and_a .accordion-button:focus {
+  background-color: var(--background);
+  color: var(--dark);
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.q_and_a .accordion-button:not(.collapsed) {
+  background-color: var(--background);
+  color: var(--dark);
+  font-family: semibold;
+}
 /* ========end========= */
 
 
