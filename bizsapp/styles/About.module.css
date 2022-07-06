@@ -1,0 +1,19 @@
+.header_bg{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../public/img/about/header.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content{
+    text-align: center;
+    margin: 4rem 0;
+}
+.content h2{
+    font-family: boldfont;
+    font-size: 42px;
+}
+.content p{
+    margin-top: 2rem;
+}
