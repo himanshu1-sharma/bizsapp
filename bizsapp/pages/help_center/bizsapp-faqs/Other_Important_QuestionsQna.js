@@ -52,7 +52,7 @@ export default function Other_Important_QuestionsQna() {
                             </ul>
                         </Accordion.Body>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="3">
+                    <Accordion.Item eventKey="3"> 
                         <Accordion.Header>How to Customize Notifications</Accordion.Header>
                         <Accordion.Body>
                             <p>To customize the notification by choosing different ringtone, vibration, popup, and light options:</p>
