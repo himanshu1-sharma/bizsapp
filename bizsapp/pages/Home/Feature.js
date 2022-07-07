@@ -26,7 +26,7 @@ export default function Feature() {
                                             </div>
                                             <div className={styles.feature_slider_content}>
                                                 <h4>Business Management Card (BMC)</h4>
-                                                <p>BizsApp Provide You Facilities to Create E-business Card for Business and User Can Easily Share Their Card with... <Link href="#">Read More</Link></p>
+                                                <p>BizsApp Provide You Facilities to Create E-business Card for Business and User Can Easily Share Their Card with... <Link href="/features">Read More</Link></p>
 
                                             </div>
                                         </div>
@@ -38,7 +38,7 @@ export default function Feature() {
                                             </div>
                                             <div className={styles.feature_slider_content}>
                                                 <h4>Buzz</h4>
-                                                <p>In Buzz Section of BizsApp User are message to other connected user very and easily, also user can create connection list... <Link href="#">Read More</Link></p>
+                                                <p>In Buzz Section of BizsApp User are message to other connected user very and easily, also user can create connection list... <Link href="/features">Read More</Link></p>
 
                                             </div>
                                         </div>
@@ -50,7 +50,7 @@ export default function Feature() {
                                             </div>
                                             <div className={styles.feature_slider_content}>
                                                 <h4>Freemium Application</h4>
-                                                <p>BizsApp Is Freemium Application here user have both option paid and free almost all feature of BizsApp Application is free... <Link href="#">Read More</Link></p>
+                                                <p>BizsApp Is Freemium Application here user have both option paid and free almost all feature of BizsApp Application is free... <Link href="/features">Read More</Link></p>
 
                                             </div>
                                         </div>
@@ -97,7 +97,7 @@ export default function Feature() {
                                             </div>
                                             <div className={styles.feature_slider_content}>
                                                 <h4>Bizsshouts</h4>
-                                                <p>BizsApp Gives You BizsShout Facilities in Bizsshouts User Share There 30-60 Second Business related video... <Link href="#">Read More</Link></p>
+                                                <p>BizsApp Gives You BizsShout Facilities in Bizsshouts User Share There 30-60 Second Business related video... <Link href="/features">Read More</Link></p>
 
                                             </div>
                                         </div>
@@ -109,7 +109,7 @@ export default function Feature() {
                                             </div>
                                             <div className={styles.feature_slider_content}>
                                                 <h4>Making Connection</h4>
-                                                <p>In making Connection features user can make easily connection with other user according to business interest... <Link href="#">Read More</Link></p>
+                                                <p>In making Connection features user can make easily connection with other user according to business interest... <Link href="/features">Read More</Link></p>
 
                                             </div>
                                         </div>
@@ -121,7 +121,7 @@ export default function Feature() {
                                             </div>
                                             <div className={styles.feature_slider_content}>
                                                 <h4>Search or Find in BizsApp</h4>
-                                                <p>In BizsApp Application user can search their relative, business person, colleagues, business partner and business... <Link href="#">Read More</Link> </p>
+                                                <p>In BizsApp Application user can search their relative, business person, colleagues, business partner and business... <Link href="/features">Read More</Link> </p>
 
                                             </div>
                                         </div>
@@ -140,7 +140,7 @@ export default function Feature() {
                                 </div>
                                 <div className={styles.feature_slider_content}>
                                     <h4>Business Management Card (BMC)</h4>
-                                    <p>BizsApp Provide You Facilities to Create E-business Card for Business and User Can Easily Share Their Card with... <Link href="#">Read More</Link></p>
+                                    <p>BizsApp Provide You Facilities to Create E-business Card for Business and User Can Easily Share Their Card with... <Link href="/features">Read More</Link></p>
 
                                 </div>
                             </div>
@@ -152,7 +152,7 @@ export default function Feature() {
                                 </div>
                                 <div className={styles.feature_slider_content}>
                                     <h4>Bizsshouts</h4>
-                                    <p>BizsApp Gives You BizsShout Facilities in Bizsshouts User Share There 30-60 Second Business related video... <Link href="#">Read More</Link></p>
+                                    <p>BizsApp Gives You BizsShout Facilities in Bizsshouts User Share There 30-60 Second Business related video... <Link href="/features">Read More</Link></p>
 
                                 </div>
                             </div>
@@ -164,7 +164,7 @@ export default function Feature() {
                                 </div>
                                 <div className={styles.feature_slider_content}>
                                     <h4>Buzz</h4>
-                                    <p>In Buzz Section of BizsApp User are message to other connected user very and easily, also user can create connection list... <Link href="#">Read More</Link></p>
+                                    <p>In Buzz Section of BizsApp User are message to other connected user very and easily, also user can create connection list... <Link href="/features">Read More</Link></p>
 
                                 </div>
                             </div>
@@ -176,7 +176,7 @@ export default function Feature() {
                                 </div>
                                 <div className={styles.feature_slider_content}>
                                     <h4>Making Connection</h4>
-                                    <p>In making Connection features user can make easily connection with other user according to business interest... <Link href="#">Read More</Link></p>
+                                    <p>In making Connection features user can make easily connection with other user according to business interest... <Link href="/features">Read More</Link></p>
 
                                 </div>
                             </div>
@@ -188,7 +188,7 @@ export default function Feature() {
                                 </div>
                                 <div className={styles.feature_slider_content}>
                                     <h4>Freemium Application</h4>
-                                    <p>BizsApp Is Freemium Application here user have both option paid and free almost all feature of BizsApp Application is free... <Link href="#">Read More</Link></p>
+                                    <p>BizsApp Is Freemium Application here user have both option paid and free almost all feature of BizsApp Application is free... <Link href="/features">Read More</Link></p>
 
                                 </div>
                             </div>
@@ -200,7 +200,7 @@ export default function Feature() {
                                 </div>
                                 <div className={styles.feature_slider_content}>
                                     <h4>Search or Find in BizsApp</h4>
-                                    <p>In BizsApp Application user can search their relative, business person, colleagues, business partner and business... <Link href="#">Read More</Link></p>
+                                    <p>In BizsApp Application user can search their relative, business person, colleagues, business partner and business... <Link href="/features">Read More</Link></p>
 
                                 </div>
                             </div>
