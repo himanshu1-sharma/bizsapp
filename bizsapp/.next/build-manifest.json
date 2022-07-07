@@ -25,16 +25,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/help_center": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/help_center.js"
-    ],
-    "/help_center/Privacy_Policy": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/help_center/Privacy_Policy.js"
-    ],
     "/help_center/Terms": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

@@ -2,7 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/help_center/Privacy_Policy": "pages/help_center/Privacy_Policy.js",
-  "/help_center/Terms": "pages/help_center/Terms.js",
-  "/help_center": "pages/help_center.js"
+  "/help_center/bizsapp-faqs/Shouts": "pages/help_center/bizsapp-faqs/Shouts.js"
 }

@@ -1,6 +1,6 @@
 const HelpCenterListAPI = [
     {
-        iconName : "bubble-chat",
+        iconName : "terms",
         name : "Terms",
         pageName : "Terms"
     },

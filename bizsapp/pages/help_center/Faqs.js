@@ -17,12 +17,12 @@ export default function Faqs() {
                 <ul>
                     {listData.map((curElt) => {
                         {/* console.log(curElt) */}
-                        const {pageName, name} = curElt;
+                        const {iconName, pageName, name} = curElt;
 
                         return(
                             <>
                                 <Link href={`/help_center/bizsapp-faqs/${pageName}`}>
-                                    <li className={asPath === `/help_center/bizsapp-faqs/${pageName}` ? `${styles.nav_item} ${styles.active}` : 'nav_item'}>{name}</li>
+                                    <li className={asPath === `/help_center/bizsapp-faqs/${pageName}` ? `${styles.nav_item} ${styles.active}` : 'nav_item'}><img src={`/img/icons/${iconName}.png`} alt="chat" className="img-fluid" /> {name}</li>
                                 </Link>
                             </>
                         )
