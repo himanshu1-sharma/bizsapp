@@ -17,14 +17,16 @@ export default function Header() {
                                             <h1>Simple.Secure. Reliable messaging.</h1>
                                             <p>With BizsApp, you'll get fast, simple, secure messaging for free, available on phones all over the world.</p>
                                             <span>Data charges may apply. Contact your provider for details.</span>
-                                            <ul>
-                                                <li>
-                                                    <img src="/img/home/Ios-Icon.png" alt='Ios-Icon' className='img-fluid' />
-                                                </li>
-                                                <li>
-                                                    <img src="/img/home/Google-play.png" alt='Ios-Icon' className='img-fluid' />
-                                                </li>
-                                            </ul>
+                                            <div className={styles.mobile_hide}>
+                                                <ul>
+                                                    <li>
+                                                        <img src="/img/home/Ios-Icon.png" alt='Ios-Icon' className='img-fluid' />
+                                                    </li>
+                                                    <li>
+                                                        <img src="/img/home/Google-play.png" alt='Ios-Icon' className='img-fluid' />
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -41,7 +43,7 @@ export default function Header() {
                                                 <Image src="/img/home/header-slider-support-mockup.png" alt="header-slider-support-mockup" width={348} height={582} />
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                     <div className={styles.header_mobile_slider}>
                                         <div className={styles.header_mobile_slider_mockup}>
@@ -50,6 +52,19 @@ export default function Header() {
                                         <div className={styles.header_mobile_slider_box}>
                                             <HeaderMobileSlider />
                                         </div>
+                                    </div>
+                                    <div className={styles.desktop_hide}>
+                                        <div className='header_text'>
+                                            <ul>
+                                                <li>
+                                                    <img src="/img/home/Ios-Icon.png" alt='Ios-Icon' className='img-fluid' />
+                                                </li>
+                                                <li>
+                                                    <img src="/img/home/Google-play.png" alt='Ios-Icon' className='img-fluid' />
+                                                </li>
+                                            </ul>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>

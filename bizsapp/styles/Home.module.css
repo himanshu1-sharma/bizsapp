@@ -260,6 +260,9 @@
 
 
 /* =======end======== */
+.desktop_hide{
+    display: none;
+}
 
 
 
@@ -267,6 +270,12 @@
 =============================== */
 
 @media (min-width: 319.98px) and (max-width: 379.98px) {
+    .desktop_hide{
+        display: block;
+    }
+    .mobile_hide{
+        display: none;
+    }
     
     .header_bg{
         height: 140vh;

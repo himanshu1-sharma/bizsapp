@@ -15,6 +15,11 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
+    "/": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/index.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -25,20 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/help_center": [
+    "/features": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/help_center.js"
-    ],
-    "/help_center/bizsapp-faqs/BMC": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/help_center/bizsapp-faqs/BMC.js"
-    ],
-    "/help_center/bizsapp-faqs/Other_Important_Questions": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/help_center/bizsapp-faqs/Other_Important_Questions.js"
+      "static/chunks/pages/features.js"
     ]
   },
   "ampFirstPages": []
