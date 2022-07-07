@@ -278,7 +278,7 @@
     }
     
     .header_bg{
-        height: 140vh;
+        height: 160vh;
         overflow: hidden;
     }
     .header_mobile_slider{
@@ -303,9 +303,15 @@
 }
 
 @media (min-width: 380px) and (max-width: 424.98px) {
+    .desktop_hide{
+        display: block;
+    }
+    .mobile_hide{
+        display: none;
+    }
     
     .header_bg{
-        height: 140vh;
+        height: 160vh;
         overflow: hidden;
     }
     .header_mobile_slider{
@@ -329,9 +335,15 @@
     }
 }
 @media (min-width: 425px) and (max-width: 575.98px) {
+    .desktop_hide{
+        display: block;
+    }
+    .mobile_hide{
+        display: none;
+    }
     
     .header_bg{
-        height: 130vh;
+        height: 140vh;
         overflow: hidden;
     }
     .header_mobile_slider{
