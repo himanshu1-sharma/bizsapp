@@ -1,8 +1,10 @@
 import Accordion from 'react-bootstrap/Accordion'
+import styles from '../../../styles/HelpCenter.module.css';
 
 export default function BizsChatQna() {
     return(
         <>
+            <div className={styles.content}>
             <div className='q_and_a'>
                 <Accordion defaultActiveKey="0" flush>
                     <Accordion.Item eventKey="0">
@@ -36,6 +38,7 @@ export default function BizsChatQna() {
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
+            </div>
             </div>
         </>
     )

@@ -25,15 +25,25 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/help_center/bizsapp-faqs/BizsChat": [
+    "/help_center": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/help_center/bizsapp-faqs/BizsChat.js"
+      "static/chunks/pages/help_center.js"
     ],
-    "/help_center/bizsapp-faqs/Other_Important_Questions": [
+    "/help_center/Privacy_Policy": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/help_center/bizsapp-faqs/Other_Important_Questions.js"
+      "static/chunks/pages/help_center/Privacy_Policy.js"
+    ],
+    "/help_center/Terms": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/help_center/Terms.js"
+    ],
+    "/help_center/bizsapp-faqs/Shouts": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/help_center/bizsapp-faqs/Shouts.js"
     ]
   },
   "ampFirstPages": []

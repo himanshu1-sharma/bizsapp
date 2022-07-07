@@ -3,6 +3,7 @@ import Navigation from '../../includes/Navigation';
 import Footer from '../../includes/Footer';
 import Faqs from '../Faqs';
 import Other_Important_QuestionsQna from './Other_Important_QuestionsQna';
+import HelpCenterList from '../HelpCenterList';
 
 export default function Other_Important_Questions() {
     return(
@@ -30,6 +31,7 @@ export default function Other_Important_Questions() {
 
                                 </div>
                             </div>
+                            <HelpCenterList />
                         </div>
                     </div>
                     <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">

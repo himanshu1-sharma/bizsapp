@@ -1,10 +1,12 @@
 import Accordion from 'react-bootstrap/Accordion'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import styles from '../../../styles/HelpCenter.module.css';
 
 export default function Other_Important_QuestionsQna() {
     return(
         <>
+            <div className={styles.content}>
             <div className='q_and_a'>
                 <Accordion defaultActiveKey="0" flush>
                     <Accordion.Item eventKey="0">
@@ -27,11 +29,11 @@ export default function Other_Important_QuestionsQna() {
                                 <li>Choose your country from the drop-down list. The drop-down list automatically fills in your country code on the left.</li>
                                 <li>Enter your phone number in the box on the right. Don't put any 0 before your phone number.</li>
                                 <li>Tap Next to request a code.</li>
-                                <li>Enter the 6-digit code you received via SMS.</li>
-                                <li>If you didn't receive the 6-digit code by SMS,</li>
+                                <li>Enter the 4-digit code you received via SMS.</li>
+                                <li>If you didn't receive the 4-digit code by SMS,</li>
                                 <li>Wait for the progress bar to finish and retry. The wait may take up to 10 minutes.</li>
                                 <li>Don't guess the code, or you will be locked out for a period of time.</li>
-                                <li>If the timer runs out before you receive the code, an option will appear to request a phone call. Choose the "Call me" option to request the call. When you answer the call, an automated voice should tell you the 6-digit code. Insert that to verify BizsApp.</li>
+                                <li>If the timer runs out before you receive the code, an option will appear to request a phone call. Choose the "Call me" option to request the call. When you answer the call, an automated voice should tell you the 4-digit code. Insert that to verify BizsApp.</li>
                                 <li>Depending on your carrier, you might receive charges for SMS and phone calls.</li>
                             </ul>
                         </Accordion.Body>
@@ -52,24 +54,8 @@ export default function Other_Important_QuestionsQna() {
                             </ul>
                         </Accordion.Body>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="3"> 
-                        <Accordion.Header>How to Customize Notifications</Accordion.Header>
-                        <Accordion.Body>
-                            <p>To customize the notification by choosing different ringtone, vibration, popup, and light options:</p>
-                            <ul>
-                                <li>Open Chat or Group Chat.</li>
-                                <li>Use custom notifications by tapping on custom notifications.</li>
-                            </ul>
-                            <p>To mute notifications:</p>
-                            <ul>
-                                <li>Open Chat</li>
-                                <li>Tap the name of the contact.</li>
-                                <li>Tap "Mute Notifications."</li>
-                                <li>Then choose how long you want to mute notifications, and then tap OK.</li>
-                            </ul>
-                        </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey="4">
+                    
+                    <Accordion.Item eventKey="3">
                         <Accordion.Header>How to edit your profile name?</Accordion.Header>
                         <Accordion.Body>
                             <ol>
@@ -89,6 +75,7 @@ export default function Other_Important_QuestionsQna() {
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
+            </div>
             </div>
         </>
     )

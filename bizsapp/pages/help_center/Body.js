@@ -1,12 +1,14 @@
 import styles from "../../styles/HelpCenter.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserCog, faCompass, faLock, faListAlt } from "@fortawesome/free-solid-svg-icons";
+import { useRouter } from "react"
 import Link from "next/link";
 import Faqs from "./Faqs";
+import HelpCenterList from "./HelpCenterList";
 
 
 
 export default function Body() {
+
+    // const { asPath } = useRouter();
 
     return (
         <>
@@ -30,6 +32,9 @@ export default function Body() {
                                         </div>
                                     </div>
                                 </div>
+
+                                <HelpCenterList />
+
                             </div>
                         </div>
                     </div>

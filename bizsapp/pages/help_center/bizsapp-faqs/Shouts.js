@@ -6,6 +6,7 @@ import Navigation from '../../includes/Navigation';
 import Footer from '../../includes/Footer';
 import Faqs from '../Faqs';
 import ShoutsQna from './ShoutsQna';
+import HelpCenterList from '../HelpCenterList';
 
 export default function Shouts() {
     return (
@@ -33,6 +34,7 @@ export default function Shouts() {
                                     </div>
 
                                 </div>
+                                <HelpCenterList />
                             </div>
                         </div>
                     </div>
