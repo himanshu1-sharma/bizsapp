@@ -4,6 +4,7 @@ import Faqs from "./Faqs";
 import Navigation from '../includes/Navigation';
 import Footer from '../includes/Footer';
 import HelpCenterList from "./HelpCenterList";
+import MobilePanel from "./MobilePanel";
 
 
 export default function Privacy_Policy() {
@@ -38,6 +39,8 @@ export default function Privacy_Policy() {
 
                             </div>
                         </div>
+                        {/* ==========mobile tabs====== */}
+                        <MobilePanel />
                     </div>
                     <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div className={styles.page_content}>

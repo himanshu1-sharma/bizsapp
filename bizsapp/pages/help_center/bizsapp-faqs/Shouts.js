@@ -7,6 +7,7 @@ import Footer from '../../includes/Footer';
 import Faqs from '../Faqs';
 import ShoutsQna from './ShoutsQna';
 import HelpCenterList from '../HelpCenterList';
+import MobilePanel from '../MobilePanel';
 
 export default function Shouts() {
     return (
@@ -37,6 +38,8 @@ export default function Shouts() {
                                 <HelpCenterList />
                             </div>
                         </div>
+                        {/* ==========mobile tabs====== */}
+                        <MobilePanel />
                     </div>
                     <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div className={styles.page_content}>

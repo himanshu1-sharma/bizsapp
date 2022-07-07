@@ -4,6 +4,7 @@ import Footer from '../../includes/Footer';
 import Faqs from '../Faqs';
 import Other_Important_QuestionsQna from './Other_Important_QuestionsQna';
 import HelpCenterList from '../HelpCenterList';
+import MobilePanel from '../MobilePanel';
 
 export default function Other_Important_Questions() {
     return(
@@ -33,6 +34,8 @@ export default function Other_Important_Questions() {
                             </div>
                             <HelpCenterList />
                         </div>
+                        {/* ==========mobile tabs====== */}
+                        <MobilePanel />
                     </div>
                     <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div className={styles.page_content}>

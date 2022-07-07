@@ -332,6 +332,27 @@ button {
 }
 /* ========end========= */
 
+/* ======mobile panel===== */
+.mobile_accordion .accordion-body {
+  padding: 0 !important;
+}
+.mobile_accordion .accordion .accordion-item .accordion-header .accordion-button img{
+  margin-right: 10px;
+}
+.mobile_accordion .accordion-button:focus {
+  background-color: var(--background);
+  color: var(--dark);
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.mobile_accordion .accordion-button:not(.collapsed) {
+  background-color: var(--background);
+  color: var(--dark);
+  font-family: semibold;
+}
+
+/* ======end======= */
 
 
 
@@ -393,6 +414,9 @@ button {
   #second {
     order: 1;
   }
+  .q_and_a {
+    margin-top: 2rem;
+  }
 }
 
 
@@ -446,6 +470,9 @@ button {
 
   #second {
     order: 1;
+  }
+  .q_and_a {
+    margin-top: 2rem;
   }
 }
 
@@ -501,6 +528,9 @@ button {
   #second {
     order: 1;
   }
+  .q_and_a {
+    margin-top: 2rem;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768.98px) {
@@ -545,6 +575,9 @@ button {
   .title h2 {
     text-align: center;
     font-size: 24px;
+  }
+  .q_and_a {
+    margin-top: 2rem;
   }
 
   

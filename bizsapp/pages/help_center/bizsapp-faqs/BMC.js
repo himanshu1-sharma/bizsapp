@@ -4,6 +4,7 @@ import Footer from '../../includes/Footer';
 import Faqs from '../Faqs';
 import BMCQna from './BMCQna';
 import HelpCenterList from '../HelpCenterList';
+import MobilePanel from '../MobilePanel';
 
 export default function BMC() {
     return (
@@ -34,6 +35,8 @@ export default function BMC() {
                             </div>
                             <HelpCenterList />
                         </div>
+                        {/* ==========mobile tabs====== */}
+                        <MobilePanel />
                     </div>
                     <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div className={styles.page_content}>
