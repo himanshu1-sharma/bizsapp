@@ -9,10 +9,17 @@ export default function contact() {
  
 let name, value; 
   const handleInputs = (e) => {
-    console.log(e)
+
     name = e.target.name;
     value = e.target.value;
-    setUser([{...user, [name]: value}])
+    setUser({...user, [name]:value} )
+  }
+
+  const submitForm = (e) => {
+      e.preventDefault();
+
+      const submitData = {user}
+      console.log(submitData)
   }
 
   return (
@@ -73,7 +80,7 @@ let name, value;
                 </div>
                 <div className={styles.form_group}>
                   <div className="mb-3">
-                    <button className="btn btn-dark">Submit</button>
+                    <button className="btn btn-dark" onClick={submitForm}>Submit</button>
                   </div>
                 </div>
               </form>
@@ -86,3 +93,7 @@ let name, value;
     </>
   );
 }
+
+
+
+ 
