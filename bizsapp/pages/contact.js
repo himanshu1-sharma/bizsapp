@@ -20,7 +20,8 @@ let name, value;
 
       const submitData = {user}
       console.log(submitData)
-  }
+      
+  } 
 
   return (
     <>
