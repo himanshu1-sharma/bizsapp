@@ -12,8 +12,8 @@ export default function Header() {
                                 <div className='header_text_center'>
                                     <div className='header_text text-center'>
                                     <Image src="/img/branding/content-1.png" alt='logo_icon' width={124} height={128} />
-                                        <h1>About Bizsapp</h1>
-                                        <p>The BizsApp Application is developed or designed for the business community. <br />BizsApp will assist business owners in easily managing, promoting, <br />and generating sales for their company.</p>
+                                        <h1>About BizsApp</h1>
+                                        <p>"BizsApp-The Business App" is a business Application by Digrowfa Private Limited, <br /> It helps businesses grow digitally with its powerfull features. <br />Building business community globally, and doing business online <br /> is very simple and easy with BizsApp</p>
                                     </div>
                                 </div>
                             </div>

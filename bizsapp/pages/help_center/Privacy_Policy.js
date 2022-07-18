@@ -48,7 +48,7 @@ export default function Privacy_Policy() {
                                 <h2>Privacy & Policy</h2>
                             </div>
                             <div className={styles.content}>
-                                <p>Digrowfa Private Limited built the BizsApp mobile and web application as a Freemium app. This SERVICE is provided by Digrowfa Private Limited at no cost and also on cost and is intended for use as is.</p>
+                                <p>Digrowfa Private Limited built the BizsApp mobile application as a Business App. This SERVICE is provided by Digrowfa Private Limited at no cost and also on cost and is intended for use as is.</p>
                                 <p>This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
                                     If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
                                 </p>
@@ -99,7 +99,7 @@ export default function Privacy_Policy() {
                                     This policy is effective as of 2022-06-09
                                 </p>
                                 <h4>Contact Us</h4>
-                                <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at <Link href="mailto:bizsapp.official@gmail.com">bizsapp.official@gmail.com</Link>.</p>
+                                <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at <Link href="mailto:support@bizsapp.com">support@bizsapp.com</Link>.</p>
                             </div>
                         </div>
                     </div>

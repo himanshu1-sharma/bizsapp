@@ -25,7 +25,7 @@ export default function Footer() {
                                     </ul>
                                 </div>
                                 <div className={styles.footer_content}>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                                    <p>"BizsApp-The Business App" is a business Application by Digrowfa Private Limited. BizsApp helps Businesses to grow digitally with its powerfull Features & functionalities.</p>
                                 </div>
                             </div>
                             <div className='col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12'>
@@ -36,7 +36,7 @@ export default function Footer() {
                                             <Link href="/about">About</Link>
                                         </li>
                                         <li>
-                                            <Link href="">Terms & Conditions</Link>
+                                            <Link href="/help_center/Terms">Terms</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -59,7 +59,7 @@ export default function Footer() {
                                     <h2>Download</h2>
                                     <ul>
                                         <li>
-                                            <Link href="">ISO</Link>
+                                            <Link href="">IOS</Link>
                                         </li>
                                         <li>
                                             <Link href="">Android</Link>
