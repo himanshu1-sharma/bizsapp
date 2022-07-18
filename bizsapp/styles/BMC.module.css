@@ -38,7 +38,7 @@
     background-image: url(../public/img/ecard/BMC-BG1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px 0 10px 10px;
+    padding: 10px 10px 10px 10px;
     border-radius: 30px;
     
     overflow: hidden !important;
@@ -49,7 +49,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     transform: rotateY(180deg);
-    padding: 10px 0 10px 10px;
+    padding: 10px 10px 10px 10px;
     border-radius: 30px;
     position: relative;
     z-index: 999999;
@@ -606,6 +606,13 @@ margin: 10px 0 0 0;
     }
     .userName h2{
         font-size: 18px !important;
+    }
+
+    .card__face_back{
+        padding: 10px;
+    }
+    .card__face_front{
+        padding: 10px;
     }
 }
 

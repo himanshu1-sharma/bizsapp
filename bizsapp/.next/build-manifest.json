@@ -29,11 +29,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/ecardDesign/BMC.js"
-    ],
-    "/help_center": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/help_center.js"
     ]
   },
   "ampFirstPages": []
