@@ -232,7 +232,10 @@ button {
 .card_share_modal .offcanvas-bottom {
   height: 30vh;
 }
-
+.card_share_modal .offcanvas-backdrop{
+  width: 420px !important;
+  height: 90vh !important;
+}
 /* =======end========= */
 
 

@@ -2,7 +2,8 @@ import Link from "next/link"
 import Image from "next/image"
 import styles from '../../styles/Navigation.module.css';
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 
 export default function Navigation() {
 

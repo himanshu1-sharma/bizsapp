@@ -86,13 +86,10 @@ export default function EcardDesign({ properties }) {
                                             <div className={styles.company_about}>
                                                 <div>
                                                     <div className={styles.company_name}>
-                                                        <h1>{properties.brandName}</h1>
+                                                        <h1>{properties.businessName}</h1>
                                                     </div>
                                                     <div className={styles.card_holder_name}>
-                                                        <i>{properties.businessName}</i>
-                                                    </div>
-                                                    <div className={styles.company_description}>
-                                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                                        <i>{properties.brandName}</i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -389,7 +386,7 @@ export default function EcardDesign({ properties }) {
 
 export async function getServerSideProps(context) {
 
-    const id = context.query.id.toString();
+    const id = context.query.id;
 
     const { db } = await connectToDatabase()
 
