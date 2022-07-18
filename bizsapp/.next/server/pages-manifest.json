@@ -1,5 +1,6 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/help_center/bizsapp-faqs/Other_Important_Questions": "pages/help_center/bizsapp-faqs/Other_Important_Questions.js"
 }

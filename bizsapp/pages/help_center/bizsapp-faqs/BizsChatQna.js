@@ -14,27 +14,27 @@ export default function BizsChatQna() {
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="1">
-                        <Accordion.Header>Can the user sends a message request to any user if the user wants to send it?</Accordion.Header>
+                        <Accordion.Header>If the user is not in my connection list, Can I chat with that user?</Accordion.Header>
                         <Accordion.Body>
-                            <p>Yes, You Can Easily Send a Message Request to any user, but in the case of a message request-reply, first the user has to accept the message request after they reply.</p>
+                            <p>Yes, You Can Easily Send a Message Request to any user, but in the case of a message request-reply, first the user has to accept the message request after that you can chat with each other.</p>
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="2">
-                        <Accordion.Header>Can the user make an unlimited list according to the requirement? </Accordion.Header>
+                        <Accordion.Header>Can I create unlimited lists according to the requirement? </Accordion.Header>
                         <Accordion.Body>
-                            <p>Yes, the user can create an unlimited list according to the user's requirements.</p>
+                            <p>Yes, you can create unlimited lists according to your business requirements.</p>
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="3">
                         <Accordion.Header>Can the user share media files over the chat with the other BizsApp users?</Accordion.Header>
                         <Accordion.Body>
-                            <p>Yes, BizsApp provides these facilities so the user can share media files with their connections.</p>
+                            <p>Yes, BizsApp provides these facilities so the user can share media files with their connections and other users.</p>
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="4">
                         <Accordion.Header>Does BizsChat support voice messages?</Accordion.Header>
                         <Accordion.Body>
-                            <p>Yes, Users Will Share Voice Messages Easily</p>
+                            <p>Yes, Users can Share Voice Messages Easily</p>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
