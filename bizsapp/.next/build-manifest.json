@@ -15,6 +15,11 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
+    "/": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/index.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -25,15 +30,45 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/ecardDesign/BMC": [
+    "/branding": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/ecardDesign/BMC.js"
+      "static/chunks/pages/branding.js"
     ],
-    "/ecardDesign/EcardDesign": [
+    "/download": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/ecardDesign/EcardDesign.js"
+      "static/chunks/pages/download.js"
+    ],
+    "/features": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/features.js"
+    ],
+    "/help_center": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/help_center.js"
+    ],
+    "/help_center/bizsapp-faqs/BMC": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/help_center/bizsapp-faqs/BMC.js"
+    ],
+    "/help_center/bizsapp-faqs/BizsChat": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/help_center/bizsapp-faqs/BizsChat.js"
+    ],
+    "/help_center/bizsapp-faqs/Other_Important_Questions": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/help_center/bizsapp-faqs/Other_Important_Questions.js"
+    ],
+    "/help_center/bizsapp-faqs/Shouts": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/help_center/bizsapp-faqs/Shouts.js"
     ]
   },
   "ampFirstPages": []
