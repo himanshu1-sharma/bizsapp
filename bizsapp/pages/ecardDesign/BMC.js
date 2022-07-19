@@ -64,8 +64,8 @@ export default function EcardDesign({ properties, userData }) {
                             <meta property="og:type" content="website" />
                             <meta property="og:image:type" content="image/png" />
 
-                            <meta property="og:image:width" content="300" />
-                            <meta property="og:image:height" content="300" />
+                            <meta property="og:image:width" content="2000" />
+                            <meta property="og:image:height" content="2000" />
 
                             <meta property="og:url" content="http://localhost:3001/" />
                         </Head>
