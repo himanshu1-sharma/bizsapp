@@ -1,3 +1,3 @@
-const pageURL = "http://localhost:3001/ecardDesign/EcardDesign?id="
+const pageURL = "https://www.bizsapp.online/ecardDesign/BMC?id="
 
 export {pageURL};

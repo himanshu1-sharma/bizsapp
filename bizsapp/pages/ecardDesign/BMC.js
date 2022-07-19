@@ -607,7 +607,7 @@ export default function EcardDesign({ properties, userData }) {
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href={"https://www.facebook.com/sharer/sharer.php?u=https://bizsapp.com?id=" + properties.user}>
+                                                                <a href={"https://www.facebook.com/sharer/sharer.php?u=https://bizsapp.online?id=" + properties.user}>
                                                                     <Image src="/img/cardIcon/facebook.png" alt="facebook" width={35} height={35} />
                                                                     <div className={styles.icon_name}>
                                                                         Facebook
@@ -623,7 +623,7 @@ export default function EcardDesign({ properties, userData }) {
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href={"https://twitter.com/intent/tweet?url=https://bizsapp.com?id=" + properties.user}>
+                                                                <a href={"https://twitter.com/intent/tweet?url=https://bizsapp.online?id=" + properties.user}>
                                                                     <Image src="/img/cardIcon/twitter.png" alt="twitter" width={35} height={35} />
                                                                     <div className={styles.icon_name}>
                                                                         Twitter
@@ -632,7 +632,7 @@ export default function EcardDesign({ properties, userData }) {
                                                             </li>
 
                                                             <li>
-                                                                <a href={"https://www.linkedin.com/sharing/share-offsite/?url=https://bizsapp.com?id=" + properties.user}>
+                                                                <a href={"https://www.linkedin.com/sharing/share-offsite/?url=https://bizsapp.online?id=" + properties.user}>
                                                                     <Image src="/img/cardIcon/linkedin.png" alt="linkedin" width={35} height={35} />
                                                                     <div className={styles.icon_name}>
                                                                         Linkedin
@@ -640,7 +640,7 @@ export default function EcardDesign({ properties, userData }) {
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a href={"https://telegram.me/share/url?url=https://bizsapp.com?id=" + properties.user}>
+                                                                <a href={"https://telegram.me/share/url?url=https://bizsapp.online?id=" + properties.user}>
                                                                     <Image src="/img/cardIcon/telegram.png" alt="telegram" width={35} height={35} />
                                                                     <div className={styles.icon_name}>
                                                                         Telegram
