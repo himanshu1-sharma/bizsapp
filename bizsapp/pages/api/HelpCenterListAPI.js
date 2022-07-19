@@ -8,6 +8,11 @@ const HelpCenterListAPI = [
         iconName : "lock",
         name : "Privacy & Policy",
         pageName : "Privacy_Policy"
+    },
+    {
+        iconName : "contact",
+        name : "Contact",
+        pageName : "Contact"
     }
 ]
 

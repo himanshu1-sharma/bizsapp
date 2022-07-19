@@ -1,9 +1,14 @@
 
 const BizsAppFaqsAPI = [
     {
-        iconName : "Shouts",
-        pageName : "Shouts",
-        name : "Shouts"
+        iconName : "account",
+        pageName : "Account",
+        name : "Account"
+    },
+    {
+        iconName : "profile",
+        pageName : "Profile",
+        name : "Profile"
     },
     {
         iconName : "bmc",
@@ -11,9 +16,30 @@ const BizsAppFaqsAPI = [
         name : "Business Management Card"
     },
     {
+        iconName : "connections",
+        pageName : "Connections",
+        name : "Connections"
+    },
+    {
+        iconName : "Shouts",
+        pageName : "Shouts",
+        name : "Shouts"
+    },
+    
+    {
         iconName : "hschat",
         pageName : "BizsChat",
         name : "BizsChat"
+    },
+    {
+        iconName : "List",
+        pageName : "List",
+        name : "List"
+    },
+    {
+        iconName : "Connection-request",
+        pageName : "Request",
+        name : "Request"
     },
     {
         iconName : "oiq",

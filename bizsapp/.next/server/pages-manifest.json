@@ -1,13 +1,5 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/features": "pages/features.js",
-  "/download": "pages/download.js",
-  "/help_center": "pages/help_center.js",
-  "/branding": "pages/branding.js",
-  "/help_center/bizsapp-faqs/Other_Important_Questions": "pages/help_center/bizsapp-faqs/Other_Important_Questions.js",
-  "/help_center/bizsapp-faqs/Shouts": "pages/help_center/bizsapp-faqs/Shouts.js",
-  "/help_center/bizsapp-faqs/BMC": "pages/help_center/bizsapp-faqs/BMC.js",
-  "/help_center/bizsapp-faqs/BizsChat": "pages/help_center/bizsapp-faqs/BizsChat.js"
+  "/_document": "pages/_document.js"
 }
