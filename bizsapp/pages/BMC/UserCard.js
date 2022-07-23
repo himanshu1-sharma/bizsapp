@@ -1,6 +1,6 @@
 import styles from '../../styles/BMC.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight, faAngleLeft, faEnvelope, faGlobe, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight, faAngleLeft, faEnvelope, faGlobe, faLocationDot, faL } from "@fortawesome/free-solid-svg-icons";
 import { faYoutube, faFacebook, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { useState } from 'react';
 import Image from "next/image";
@@ -46,6 +46,18 @@ export default function UserCard({ properties, userData }) {
                     setCopied(true);
                 }
 
+                const [copiedLocation, setCopiedLocation] = useState(false);
+               function copyLocation(){
+                const el = document.createElement("input");
+                    el.value = properties.address;
+                    document.body.appendChild(el);
+                    document.body.appendChild(el);
+                    el.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(el);
+                    setCopiedLocation(true);
+               } 
+
 
 
                 return (
@@ -89,7 +101,18 @@ export default function UserCard({ properties, userData }) {
                                                         <h1>{properties.brandName}</h1>
                                                     </div>
                                                     <div className={styles.card_holder_name}>
-                                                        <i>{properties.businessName}</i>
+                                                        <i>{properties.businessName}  
+                                                        {properties.designation && 
+                                                        
+                                                            <>
+                                                                <span className='px-1'>({properties.designation})</span>
+                                                            </>
+                                                        
+                                                        }
+                                                         
+                                                        
+                                                        </i> 
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -394,8 +417,8 @@ export default function UserCard({ properties, userData }) {
                                                                 </div>
                                                             </div>
                                                             <div className={styles.enquiry_box_content}>
-                                                                <a href="#">
-                                                                    <button> Location</button>
+                                                                <a href="#" onClick={copyLocation}>
+                                                                    <button>{!copiedLocation ? "Copy Location" : "Copied"}</button>
                                                                 </a>
                                                             </div>
                                                         </li>
