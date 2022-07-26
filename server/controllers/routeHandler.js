@@ -13,5 +13,7 @@ export const getInput = (req, res) => {
         message
     })
 
+    console.log("sssssssssss", newInput)
+
     newInput.save();
 }

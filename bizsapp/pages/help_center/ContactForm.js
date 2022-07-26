@@ -33,6 +33,8 @@ export default function ContactForm() {
         }
 
         Axios.post('http://localhost:3001/getinput', newInput) 
+
+        window.location.reload(false);
     }
 
   return (
