@@ -64,6 +64,27 @@ button {
   src: url(../public/font/Montserrat/Montserrat-ExtraBold.ttf);
 }
 
+@font-face {
+  font-family: nunitoRegular;
+  src: url(../public/font/Nunito/Nunito-Regular.ttf);
+}
+@font-face {
+  font-family: nunitoMedium;
+  src: url(../public/font/Nunito/Nunito-Medium.ttf);
+}
+@font-face {
+  font-family: nunitoSemibold;
+  src: url(../public/font/Nunito/Nunito-SemiBold.ttf);
+}
+@font-face {
+  font-family: nunitoBold;
+  src: url(../public/font/Nunito/Nunito-Bold.ttf);
+}
+@font-face {
+  font-family: nunitoExtrabold;
+  src: url(../public/font/Nunito/Nunito-ExtraBold.ttf);
+}
+
 
 
 
@@ -362,11 +383,76 @@ button {
 
 
 
+.catalogSlider .swiper {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.catalogSlider .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.catalogSlider .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.catalogSlider .swiper-3d .swiper-slide-shadow-left{
+  border-radius: 20px;
+  background-image: none;
+}
+.catalogSlider .swiper-3d .swiper-slide-shadow-right{
+  border-radius: 20px;
+  background-image: none;
+}
+.catalogSlider .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  top: 10px;
+  height: max-content;
+}
+.catalogName{
+  width: max-content;
+  background-color: black;
+  color: var(--white);
+  font-family: nunitoRegular;
+  padding: 5px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 14px;
+  border: 1px solid var(--white);
+  margin: 10px auto;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.catalogSlider .swiper-slide-active .catalogName{
+  opacity: 1;
+}
+.catalogSlider .swiper-pagination-bullet{
+  background-color: var(--white);
+}
+
 
 /* ============responsive css==============
 ============================== */
 
 @media (min-width: 319.98px) and (max-width: 379.98px) {
+
+  /* ======new bmc====== */
+
+  .catalogSlider .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    top: 0;
+  }
+  .catalogSlider .swiper{
+    padding-top: 28px;
+  }
+
+  /* ======end======= */
+
   h2 {
     font-size: 30px !important;
   }
@@ -428,6 +514,18 @@ button {
 
 
 @media (min-width: 380px) and (max-width: 424.98px) {
+
+  /* ======new bmc====== */
+
+  .catalogSlider .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    top: 0;
+  }
+  .catalogSlider .swiper{
+    padding-top: 28px;
+  }
+
+  /* ======end======= */
+
   h2 {
     font-size: 30px !important;
   }
