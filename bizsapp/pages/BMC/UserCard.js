@@ -84,7 +84,11 @@ export default function UserCard({ properties, userData }) {
                                     <div className={active ? `${styles.card} ${styles.active}` : styles.card}>
                                         {/* fornt side */}
                                         <div className={`${styles.card__face} ${styles.card__face_front}`}>
+                                            <div className={styles.cardBg}>
+                                                <img src="/img/ecard/bg.png" alt="cardBg" />
+                                            </div>
 
+                                            <div className={styles.cardFrontContent}>
                                             <div className={styles.cardName}>
                                                 Business Management Card
                                             </div>
@@ -241,6 +245,7 @@ export default function UserCard({ properties, userData }) {
                                                         </div>
                                                     </li>
                                                 </ul>
+                                            </div>
                                             </div>
                                         </div>
                                         {/* back side */}
