@@ -13,7 +13,7 @@
 
 .flip_card {
     width: 420px;
-    height: 90vh;
+    height: 95vh;
     perspective: 600px;
 }
 
@@ -154,22 +154,22 @@
     height: 50%;
 }
 .catalogTitle {
-    border-top: 1px solid var(--white);
+    border-top: 1px solid #ffffff6b;
     margin: 1rem 0;
     position: relative;
 }
 .catalogTitle div{
     width: max-content;
-    background-color: black;
-    color: var(--white);
-    font-family: nunitoRegular;
+    background-color: white;
+    color: var(--dark);
+    font-family: nunitoSemibold;
+    font-weight: 600;
     padding: 5px 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
     font-size: 14px;
-    border: 1px solid var(--white);
     margin: -1rem auto;
 }
 
