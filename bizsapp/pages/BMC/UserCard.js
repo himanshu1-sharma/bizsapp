@@ -16,6 +16,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
+import ReactPlayer from 'react-player'
 
 export default function UserCard(data) {
 
@@ -69,10 +70,10 @@ export default function UserCard(data) {
 
                                     <div className={styles.forntProfileBox}>
                                         <div className={styles.companyLogo}>
-                                            <img src={cardData?.user?.profilepic} className="img-fluid" />
+                                            <img src={cardData?.brandLogo} className="img-fluid" />
                                         </div>
                                         <div className={styles.companyName}>
-                                            <h1>{cardData?.user?.name}</h1>
+                                            <h1>{cardData?.brandName}</h1>
                                         </div>
                                         <div className={styles.designationName}>
                                             <span>({cardData?.user?.title})</span>
@@ -128,16 +129,20 @@ export default function UserCard(data) {
                                         <ul>
                                             <li>
                                                 <div className={styles.iconBox}>
-                                                    <img src="/img/ecard/whatsapp.png" alt="whatsapp" className='img-fluid' />
+                                                    <a href={`https://wa.me/+91${cardData?.contacts[1]?.contactNumber}?text=Hello ${cardData?.brandName}`} target="_blank">
+                                                        <img src="/img/ecard/whatsapp.png" alt="whatsapp" className='img-fluid' />
+                                                    </a>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className={styles.iconBox}>
-                                                    <img src="/img/ecard/phone.png" alt="phone" className='img-fluid' />
+                                                    <a href={`tel:+91${cardData?.contacts[0]?.contactNumber}`}>
+                                                        <img src="/img/ecard/phone.png" alt="phone" className='img-fluid' />
+                                                    </a>
                                                 </div>
                                             </li>
                                             <li>
-                                                <div className={styles.iconBox}>
+                                                <div className={`${styles.iconBox}  ${styles.linkIcon}`}>
                                                     <img src="/img/ecard/link.png" alt="link" className='img-fluid' />
                                                 </div>
                                             </li>
@@ -155,68 +160,84 @@ export default function UserCard(data) {
                                     </div>
                                 </div>
                                 {/* =======share modal====== */}
-                                <div onClick={handleModal} className={!isActive ? "shareModalBoxOpen" : "null"}>
+                                <div className={!isActive ? "shareModalBoxOpen" : "null"}>
                                     <div className={`${styles.iconBox} openShareModal`} onClick={handleModal}>
                                         <img src="/img/ecard/link.png" alt="link" className='img-fluid' />
                                         <img src="/img/ecard/close.png" alt="link" className='img-fluid' />
                                     </div>
                                     <div className="shareModalBox">
                                         <ul>
-                                            <li className="bizschar">
-                                                <a href="">
-                                                    <button>
-                                                        <img src="/img/ecard/chat.png" alt="arow" className='img-fluid' />
-                                                    </button>
+                                            <li>
+                                                <a href="#">
+
+                                                    <img src="/img/ecard/chat.png" alt="arow" className='img-fluid' />
+
                                                 </a>
                                             </li>
-                                            <li className="twitter">
-                                                <a href="">
-                                                    <button>
-                                                        <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
-                                                        Twitter
-                                                    </button>
-                                                </a>
-                                            </li>
-                                            <li className="facebook">
-                                                <a href="">
-                                                    <button>
-                                                        <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
-                                                        Facebook
-                                                    </button>
-                                                </a>
-                                            </li>
-                                            <li className="instagram">
-                                                <a href="">
-                                                    <button>
-                                                        <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
-                                                        Instagram
-                                                    </button>
-                                                </a>
-                                            </li>
-                                            <li className="linkedin">
-                                                <a href="">
-                                                    <button>
-                                                        <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
-                                                        Linkedin
-                                                    </button>
-                                                </a>
-                                            </li>
-                                            <li className="youtube">
-                                                <a href="">
-                                                    <button>
-                                                        <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
-                                                        YouTube
-                                                    </button>
-                                                </a>
-                                            </li>
-                                            <li className="website">
-                                                <a href="">
-                                                    <button>
+                                            {cardData?.socialLinks && cardData?.socialLinks?.map((curElt) => {
+                                                return (
+                                                    <>
+                                                        {curElt.socialLinkType === "Facebook" &&
+                                                            <li>
+                                                                <a href={curElt.link} target="_blank">
+                                                                    <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                                    Facebook
+                                                                </a>
+                                                            </li>
+
+                                                        }
+                                                        {curElt.socialLinkType === "Instagram" &&
+                                                            <li>
+                                                                <a href={curElt.link} target="_blank">
+
+                                                                    <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                                    Instagram
+
+                                                                </a>
+                                                            </li>
+                                                        }
+                                                        {curElt.socialLinkType === "Youtube" &&
+                                                            <li>
+                                                                <a href={curElt.link} target="_blank">
+
+                                                                    <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                                    YouTube
+
+                                                                </a>
+                                                            </li>
+                                                        }
+                                                        {curElt.socialLinkType === "LinkedIn" &&
+                                                            <li>
+                                                                <a href={curElt.link} target="_blank">
+
+                                                                    <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                                    Linkedin
+
+                                                                </a>
+                                                            </li>
+
+                                                        }
+                                                        {curElt.socialLinkType === "Twitter" &&
+                                                            <li>
+                                                                <a href={curElt.link} target="_blank">
+                                                                    <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                                    Twitter
+                                                                </a>
+                                                            </li>
+                                                        }
+                                                    </>
+                                                )
+                                            })}
+                                            {cardData?.websiteLink &&
+
+                                                <li>
+                                                    <a href={cardData?.websiteLink} target="_blank">
                                                         <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
                                                         Website
-                                                    </button>
-                                                </a>
-                                            </li>
+                                                    </a>
+                                                </li>
+
+                                            }
                                         </ul>
                                     </div>
                                 </div>
@@ -224,9 +245,144 @@ export default function UserCard(data) {
                             </div>
                             {/* back side */}
                             <div className={`${styles.card__face} ${styles.card__face_back}`} style={{ backgroundImage: `linear-gradient(to top, #${cardData?.theme?.dark} , #${cardData?.theme?.light})` }}>
-                                <div className={styles.clickButton} onClick={() => setActive(!active)}>
-                                    <FontAwesomeIcon icon={faAngleLeft} />
+                                <div className={styles.cardBackContent}>
+                                    <div className={styles.cardName}>
+                                        Business Management Card
+                                    </div>
+                                    <div className={styles.cardVideoBox}>
+                                        <div className="cardVideo">
+                                            <ReactPlayer 
+                                                url={cardData?.brandVideo?.location} 
+                                                controls
+                                                config={{ file: { attributes: { controlsList: 'nodownload' } } }}
+                                                onContextMenu={(e) => e.preventDefault()}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className={styles.cardDateTimeBox}>
+                                        
+                                    </div>
+                                    <div className={styles.cardAddress}>
+
+                                    </div>
+                                    <div className={styles.bottomButtonBox}>
+
+                                        <ul>
+                                            <li>
+                                                <div className={styles.iconBox}>
+                                                    <a href={`https://wa.me/+91${cardData?.contacts[1]?.contactNumber}?text=Hello ${cardData?.brandName}`} target="_blank">
+                                                        <img src="/img/ecard/whatsapp.png" alt="whatsapp" className='img-fluid' />
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className={styles.iconBox}>
+                                                    <a href={`tel:+91${cardData?.contacts[0]?.contactNumber}`}>
+                                                        <img src="/img/ecard/phone.png" alt="phone" className='img-fluid' />
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className={`${styles.iconBox} ${styles.linkIcon}`}>
+                                                    <img src="/img/ecard/link.png" alt="link" className='img-fluid' />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className={styles.iconBox}>
+                                                    <img src="/img/ecard/bizsicon.png" alt="mail" className='img-fluid' />
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className={styles.iconBox} onClick={() => setActive(!active)}>
+                                                    <img src="/img/ecard/back.png" alt="arow" className='img-fluid' />
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
+                                {/* =======share modal====== */}
+                                <div className={!isActive ? "shareModalBoxOpen" : "null"}>
+                                    <div className={`${styles.iconBox} openShareModal`} onClick={handleModal}>
+                                        <img src="/img/ecard/link.png" alt="link" className='img-fluid' />
+                                        <img src="/img/ecard/close.png" alt="link" className='img-fluid' />
+                                    </div>
+                                    <div className="shareModalBox">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+
+                                                    <img src="/img/ecard/chat.png" alt="arow" className='img-fluid' />
+
+                                                </a>
+                                            </li>
+                                            {cardData?.socialLinks && cardData?.socialLinks?.map((curElt) => {
+                                                return (
+                                                    <>
+                                                        {curElt.socialLinkType === "Facebook" &&
+                                                            <li>
+                                                                <a href={curElt.link} target="_blank">
+                                                                    <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                                    Facebook
+                                                                </a>
+                                                            </li>
+
+                                                        }
+                                                        {curElt.socialLinkType === "Instagram" &&
+                                                            <li>
+                                                                <a href={curElt.link} target="_blank">
+
+                                                                    <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                                    Instagram
+
+                                                                </a>
+                                                            </li>
+                                                        }
+                                                        {curElt.socialLinkType === "Youtube" &&
+                                                            <li>
+                                                                <a href={curElt.link} target="_blank">
+
+                                                                    <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                                    YouTube
+
+                                                                </a>
+                                                            </li>
+                                                        }
+                                                        {curElt.socialLinkType === "LinkedIn" &&
+                                                            <li>
+                                                                <a href={curElt.link} target="_blank">
+
+                                                                    <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                                    Linkedin
+
+                                                                </a>
+                                                            </li>
+
+                                                        }
+                                                        {curElt.socialLinkType === "Twitter" &&
+                                                            <li>
+                                                                <a href={curElt.link} target="_blank">
+                                                                    <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                                    Twitter
+                                                                </a>
+                                                            </li>
+                                                        }
+                                                    </>
+                                                )
+                                            })}
+                                            {cardData?.websiteLink &&
+
+                                                <li>
+                                                    <a href={cardData?.websiteLink} target="_blank">
+                                                        <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                        Website
+                                                    </a>
+                                                </li>
+
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                                {/* =======end====== */}
                             </div>
                         </div>
 

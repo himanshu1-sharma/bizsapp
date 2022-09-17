@@ -520,7 +520,7 @@ button {
   transform: translate(-50%, -50%);
 }
 
-.shareModalBox ul li button {
+.shareModalBox ul li a {
   width: 245px;
   height: 41px;
   background: #FFFFFF;
@@ -568,7 +568,10 @@ button {
   opacity: 1;
   transition: 1.6s ease-in-out;
 }
-
+.cardVideo div{
+  width: 100% !important;
+  height: 100% !important;
+}
 
 /* ============responsive css==============
 ============================== */
