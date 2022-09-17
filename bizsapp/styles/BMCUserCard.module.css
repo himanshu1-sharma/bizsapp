@@ -1,4 +1,6 @@
-
+.green .BMCUserCard_cardName{
+    color: var(--dark);
+}
 
 .bmc_box {
     width: 100%;
@@ -8,7 +10,7 @@
     align-items: center;
     overflow: hidden;
     margin: 0 auto;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .flip_card {
@@ -24,10 +26,11 @@
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
-    
+
 }
+
 .card.active {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
 }
 
 .card__face {
@@ -38,9 +41,10 @@
     backface-visibility: hidden;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-   
+
 }
-.cardFrontContent{
+
+.cardFrontContent {
     position: absolute;
     top: 0;
     width: 100%;
@@ -59,7 +63,7 @@
 }
 
 .card__face_back {
-    background-image: linear-gradient(to top, #6910AF , #871EDA);
+    /* background-image: linear-gradient(to top, #6910AF, #871EDA); */
     background-repeat: no-repeat;
     background-size: cover;
     transform: rotateY(180deg);
@@ -91,7 +95,7 @@
     font-size: 28px;
 }
 
-.cardName{
+.cardName {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +107,7 @@
     font-family: nunitoMedium;
 }
 
-.forntProfileBox{
+.forntProfileBox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,23 +116,26 @@
     width: 100%;
     height: 33%;
 }
-.companyLogo{
+
+.companyLogo {
     width: 113px;
     height: 113px;
     border-radius: 50%;
     border: 6px solid var(--white);
 }
-.companyLogo img{
+
+.companyLogo img {
     border-radius: 50%;
 }
 
-.companyName h1{
+.companyName h1 {
     font-size: 22px;
     color: var(--white);
     font-family: nunitoSemibold;
     margin: 1rem 0 3px 0;
 }
-.designationName span{
+
+.designationName span {
     font-family: nunitoMedium;
     color: var(--white);
     font-size: 14px;
@@ -137,28 +144,35 @@
     border-bottom: 1px solid var(--white);
 }
 
-.descriptionBox{
+.descriptionBox {
     text-align: center;
     padding: 1rem;
 }
-.descriptionBox p{
+
+.descriptionBox p {
     margin: 0;
     font-family: nunitoRegular;
     font-size: 14px;
     color: var(--white);
+    word-break: break-all;
+    overflow: hidden;
+    width: 100%;
+    height: 56px;
 }
 
-.catalogBox{
+.catalogBox {
     /* border: 1px solid red; */
     width: 100%;
     height: 50%;
 }
+
 .catalogTitle {
     border-top: 1px solid #ffffff6b;
     margin: 1rem 0;
     position: relative;
 }
-.catalogTitle div{
+
+.catalogTitle div {
     width: max-content;
     background-color: white;
     color: var(--dark);
@@ -174,20 +188,25 @@
 }
 
 
-.catalogImg{
+.catalogImg {
     width: 180px;
     height: auto;
     border-radius: 20px;
 }
 
-.bottomButtonBox{
+.bottomButtonBox {
     padding: 1.5rem;
     /* border: 1px solid red; */
     height: 10%;
     display: flex;
     align-items: center;
+    position: relative;
 }
-.bottomButtonBox ul{
+
+
+
+
+.bottomButtonBox ul {
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -196,94 +215,133 @@
     width: 100%;
     margin: 0;
 }
-.iconBox{
+
+.iconBox {
     width: 50px;
     height: 50px;
-    background-color: black;
+    background-color: var(--white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.iconBox img{
+
+.iconBox img {
     max-width: 25px;
 }
 
+.prouctSliderBox{
+    background-color: var(--white);
+    border-radius: 10px;
+    height: 195px;
+    overflow: hidden;
+}
+.productName{
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: nunitoBold;
+    height: 15%;
+}
+.productImg{
+    height: 85%;
+    overflow: hidden;
+}
+.productImg img{
+    max-width: 100% !important;
+}
 /* ============responsive css==============
 ============================== */
 
 @media (min-width: 319.98px) and (max-width: 379.98px) {
-    .flip_card{
+    .flip_card {
         width: 345px;
     }
-    .companyLogo{
+
+    .companyLogo {
         width: 90px;
         height: 90px;
     }
-    .companyName h1{
+
+    .companyName h1 {
         font-size: 20px;
         margin: 10px 0 3px 0;
     }
-    .descriptionBox p{
+
+    .descriptionBox p {
         font-size: 12px;
         margin-top: 10px;
     }
-    .descriptionBox{
+
+    .descriptionBox {
         padding: 0 1rem;
     }
-    .catalogImg{
+
+    .catalogImg {
         width: 150px;
         margin: 0 auto;
     }
-    .iconBox{
+
+    .iconBox {
         width: 45px;
         height: 45px;
     }
-    .iconBox img{
+
+    .iconBox img {
         max-width: 20px;
     }
-    .catalogBox{
-        height: 48%;
+
+    .catalogBox {
+        height: 45%;
     }
-    .bottomButtonBox{
-        height: 9%;
+
+    .bottomButtonBox {
+        height: 12%;
     }
 }
 
 @media (min-width: 380px) and (max-width: 424.98px) {
-    .flip_card{
+    .flip_card {
         width: 95%;
     }
-    .companyLogo{
+
+    .companyLogo {
         width: 90px;
         height: 90px;
     }
-    .companyName h1{
+
+    .companyName h1 {
         font-size: 20px;
         margin: 10px 0 3px 0;
     }
-    .descriptionBox p{
+
+    .descriptionBox p {
         font-size: 12px;
         margin-top: 10px;
     }
-    .descriptionBox{
+
+    .descriptionBox {
         padding: 0 1rem;
     }
-    .catalogImg{
+
+    .catalogImg {
         width: 150px;
         margin: 0 auto;
     }
-    .iconBox{
+
+    .iconBox {
         width: 45px;
         height: 45px;
     }
-    .iconBox img{
+
+    .iconBox img {
         max-width: 20px;
     }
-    .catalogBox{
-        height: 48%;
+
+    .catalogBox {
+        height: 45%;
     }
-    .bottomButtonBox{
-        height: 9%;
+
+    .bottomButtonBox {
+        height: 12%;
     }
 }

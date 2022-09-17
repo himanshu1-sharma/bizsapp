@@ -18,17 +18,22 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper";
 
 export default function UserCard(data) {
-    
+
 
     const [cardData, setCardData] = useState()
-    
+
     useEffect(() => {
         setCardData(data.data.data)
         console.log("cardData", cardData)
     }, [])
-    
+
 
     const [active, setActive] = useState(false);
+    const [isActive, setIsActive] = useState("false")
+
+    const handleModal = () => {
+        setIsActive(!isActive)
+    }
 
 
     return (
@@ -56,7 +61,7 @@ export default function UserCard(data) {
                     <div className={styles.flip_card}>
                         <div className={active ? `${styles.card} ${styles.active}` : styles.card}>
                             {/* fornt side */}
-                            <div className={`${styles.card__face} ${styles.card__face_front}`} style={{backgroundImage: `linear-gradient(to top, #${cardData?.theme?.dark} , #${cardData?.theme?.light})`}}>
+                            <div className={`${styles.card__face} ${styles.card__face_front}`} style={{ backgroundImage: `linear-gradient(to top, #${cardData?.theme?.dark} , #${cardData?.theme?.light})` }}>
                                 <div className={styles.cardFrontContent}>
                                     <div className={styles.cardName}>
                                         Business Management Card
@@ -64,16 +69,16 @@ export default function UserCard(data) {
 
                                     <div className={styles.forntProfileBox}>
                                         <div className={styles.companyLogo}>
-                                            <img src="" className="img-fluid" />
+                                            <img src={cardData?.user?.profilepic} className="img-fluid" />
                                         </div>
                                         <div className={styles.companyName}>
-                                            <h1>Himanshu Sharma</h1>
+                                            <h1>{cardData?.user?.name}</h1>
                                         </div>
                                         <div className={styles.designationName}>
-                                            <span>(Software Developer)</span>
+                                            <span>({cardData?.user?.title})</span>
                                         </div>
                                         <div className={styles.descriptionBox}>
-                                            <p>A designation is a description, name, or title that is given to someone or something. Designation is the fact of giving that description, name, or title</p>
+                                            <p>{cardData?.about}</p>
                                         </div>
                                     </div>
 
@@ -91,103 +96,158 @@ export default function UserCard(data) {
                                                 modules={[Pagination]}
                                                 className="mySwiper"
                                             >
-                                                <SwiperSlide>
-                                                    <div className={styles.prouctSliderBox}>
-                                                        <div className={styles.productImg}>
-                                                            <img src='/img/ecard/product1.png' alt='catalog_image' className='img-fluid' />
-                                                        </div>
-                                                        <div className={styles.productName}>
-                                                            Women's Slim Fit washed jeans strectchable
-                                                        </div>
-                                                    </div>
-                                                </SwiperSlide>
-                                                <SwiperSlide>
-                                                    <div className={styles.prouctSliderBox}>
-                                                        <div className={styles.productImg}>
-                                                            <img src='/img/ecard/product2.png' alt='catalog_image' className='img-fluid' />
-                                                        </div>
-                                                        <div className={styles.productName}>
-                                                            Women's Slim Fit washed jeans strectchable
-                                                        </div>
-                                                    </div>
-                                                </SwiperSlide>
-                                                <SwiperSlide>
-                                                    <div className={styles.prouctSliderBox}>
-                                                        <div className={styles.productImg}>
-                                                            <img src='/img/ecard/product3.png' alt='catalog_image' className='img-fluid' />
-                                                        </div>
-                                                        <div className={styles.productName}>
-                                                            Women's Slim Fit washed jeans strectchable
-                                                        </div>
-                                                    </div>
-                                                </SwiperSlide>
-                                                <SwiperSlide>
-                                                    <div className={styles.prouctSliderBox}>
-                                                        <div className={styles.productImg}>
-                                                            <img src='/img/ecard/product4.png' alt='catalog_image' className='img-fluid' />
-                                                        </div>
-                                                        <div className={styles.productName}>
-                                                            Women's Slim Fit washed jeans strectchable
-                                                        </div>
-                                                    </div>
-                                                </SwiperSlide>
+                                                {cardData?.products && cardData?.products?.map((curElt) => {
+                                                    return (
+                                                        <>
+                                                            <SwiperSlide>
+                                                                <div className={styles.prouctSliderBox}>
+                                                                    <div className={styles.productImg}>
+                                                                        {curElt.images && curElt.images?.map((productImg) => {
+                                                                            return (
+                                                                                <>
+                                                                                    <img src={productImg.location} alt='catalog_image' className='img-fluid' />
+                                                                                </>
+                                                                            )
+                                                                        })}
+                                                                        {/* <img src='/img/ecard/product1.png' alt='catalog_image' className='img-fluid' /> */}
+                                                                    </div>
+                                                                    <div className={styles.productName}>
+                                                                        {curElt.title}
+                                                                    </div>
+                                                                </div>
+                                                            </SwiperSlide>
+                                                        </>
+                                                    )
+                                                })}
                                             </Swiper>
                                         </div>
                                     </div>
 
                                     <div className={styles.bottomButtonBox}>
+
                                         <ul>
                                             <li>
                                                 <div className={styles.iconBox}>
-                                                    <img src="/img/catalog/link.png" alt="link" className='img-fluid' />
+                                                    <img src="/img/ecard/whatsapp.png" alt="whatsapp" className='img-fluid' />
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className={styles.iconBox}>
-                                                    <img src="/img/catalog/phone.png" alt="phone" className='img-fluid' />
+                                                    <img src="/img/ecard/phone.png" alt="phone" className='img-fluid' />
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className={styles.iconBox}>
-                                                    <img src="/img/catalog/whatsapp.png" alt="whatsapp" className='img-fluid' />
+                                                    <img src="/img/ecard/link.png" alt="link" className='img-fluid' />
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className={styles.iconBox}>
-                                                    <img src="/img/catalog/mail.png" alt="mail" className='img-fluid' />
+                                                    <img src="/img/ecard/bizsicon.png" alt="mail" className='img-fluid' />
                                                 </div>
                                             </li>
                                             <li>
                                                 <div className={styles.iconBox} onClick={() => setActive(!active)}>
-                                                    <img src="/img/catalog/arow.png" alt="arow" className='img-fluid' />
+                                                    <img src="/img/ecard/next.png" alt="arow" className='img-fluid' />
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
+                                {/* =======share modal====== */}
+                                <div onClick={handleModal} className={!isActive ? "shareModalBoxOpen" : "null"}>
+                                    <div className={`${styles.iconBox} openShareModal`} onClick={handleModal}>
+                                        <img src="/img/ecard/link.png" alt="link" className='img-fluid' />
+                                        <img src="/img/ecard/close.png" alt="link" className='img-fluid' />
+                                    </div>
+                                    <div className="shareModalBox">
+                                        <ul>
+                                            <li className="bizschar">
+                                                <a href="">
+                                                    <button>
+                                                        <img src="/img/ecard/chat.png" alt="arow" className='img-fluid' />
+                                                    </button>
+                                                </a>
+                                            </li>
+                                            <li className="twitter">
+                                                <a href="">
+                                                    <button>
+                                                        <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                        Twitter
+                                                    </button>
+                                                </a>
+                                            </li>
+                                            <li className="facebook">
+                                                <a href="">
+                                                    <button>
+                                                        <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                        Facebook
+                                                    </button>
+                                                </a>
+                                            </li>
+                                            <li className="instagram">
+                                                <a href="">
+                                                    <button>
+                                                        <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                        Instagram
+                                                    </button>
+                                                </a>
+                                            </li>
+                                            <li className="linkedin">
+                                                <a href="">
+                                                    <button>
+                                                        <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                        Linkedin
+                                                    </button>
+                                                </a>
+                                            </li>
+                                            <li className="youtube">
+                                                <a href="">
+                                                    <button>
+                                                        <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                        YouTube
+                                                    </button>
+                                                </a>
+                                            </li>
+                                            <li className="website">
+                                                <a href="">
+                                                    <button>
+                                                        <img src="/img/ecard/link.png" alt="arow" className='img-fluid' />
+                                                        Website
+                                                    </button>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                {/* =======end====== */}
                             </div>
                             {/* back side */}
-                            <div className={`${styles.card__face} ${styles.card__face_back}`}>
+                            <div className={`${styles.card__face} ${styles.card__face_back}`} style={{ backgroundImage: `linear-gradient(to top, #${cardData?.theme?.dark} , #${cardData?.theme?.light})` }}>
                                 <div className={styles.clickButton} onClick={() => setActive(!active)}>
                                     <FontAwesomeIcon icon={faAngleLeft} />
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
+
+
                 </div>
             </section>
         </>
     )
 };
 
-export async function getServerSideProps(context){
+export async function getServerSideProps(context) {
     const id = context.query.id;
     console.log("iddddddddddd: ", id)
     const res = await fetch(`http://13.234.249.180:3001/api/business/card/${id}`)
     const data = await res.json()
 
-    if(!data){
-        return{
+    if (!data) {
+        return {
             notFound: true,
         }
     }
