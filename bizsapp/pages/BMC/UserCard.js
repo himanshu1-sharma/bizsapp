@@ -698,7 +698,7 @@ export default function UserCard(data) {
 export async function getServerSideProps(context) {
     const id = context.query.id;
     console.log("iddddddddddd: ", id)
-    const res = await fetch(`http://13.234.249.180:3001/api/business/card/${id}`)
+    const res = await fetch(`https://bizsapp.co.in/api/business/card/${id}`)
     const data = await res.json()
 
     if (!data) {
