@@ -60,7 +60,7 @@ export default function UserCard(data) {
                 <meta property="og:site_name" content={cardData?.brandName} />
                 <meta property="og:BMC" content={cardData?.address} />
                 <meta property="og:title Card" content="Business Managment Card" />
-                <meta property="og:image" itemprop="image" content={cardData?.brandLogo} />
+                <meta property="og:image" itemProp="image" content={cardData?.brandLogo} />
                 <meta property="og:type" content="website" />
                 <meta property="og:image:type" content="image/png" />
                 <meta property="og:image:width" content="300" />
