@@ -1,8 +1,8 @@
 {
   "_app.js -> bootstrap/dist/js/bootstrap.bundle": {
-    "id": 5577,
+    "id": "_app.js -> bootstrap/dist/js/bootstrap.bundle",
     "files": [
-      "static/chunks/aceecd74.92ece7bceb94663e.js"
+      "static/chunks/node_modules_bootstrap_dist_js_bootstrap_bundle_js.js"
     ]
   }
 }
