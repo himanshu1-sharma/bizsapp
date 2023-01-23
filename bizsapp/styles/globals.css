@@ -250,9 +250,8 @@ button {
 /* ========card share modal===== */
 
 .card_share_modal .offcanvas {
-  border-top-left-radius: 45px;
-  border-top-right-radius: 45px;
-  border-bottom: 5px solid var(--primary);
+  border-radius: 30px;
+  z-index: 999999;
 }
 
 .card_share_modal .offcanvas-bottom {
@@ -262,6 +261,7 @@ button {
 .card_share_modal .offcanvas-backdrop {
   width: 420px !important;
   height: 90vh !important;
+  border-radius: 30px;
 }
 
 /* =======end========= */
@@ -401,13 +401,14 @@ button {
 
 .catalogSlider .swiper {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 40px;
+  padding-left: 1rem;
 }
 
 .catalogSlider .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 250px;
+  width: 285px;
   height: auto;
   border-radius: 10px;
 }
@@ -463,13 +464,16 @@ button {
   transform: translate(-50%, -50%);
   top: 93.3%;
   left: 50%;
-  z-index: 99999 !important;
+  z-index: 99999;
+  width: 50px !important;
+  height: 50px !important;
 }
 
 .openShareModal img {
   transform: rotate(0deg);
   transition: all 0.4s;
   position: absolute;
+  max-width: 25px !important;
 }
 
 .shareModalBox {
@@ -507,72 +511,181 @@ button {
 }
 
 .shareModalBoxOpen .openShareModal img {
-  transform: rotate(360deg);
+  transform: rotate(90deg);
 }
 
 .shareModalBox ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 59%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
 }
 
 .shareModalBox ul li a {
-  width: 245px;
+  width: 155px;
   height: 41px;
   background: #FFFFFF;
-  border-radius: 42px;
+  border-radius: 10px;
   outline: none;
   border: none;
   font-size: 16px;
   font-family: nunitoBold;
   margin-bottom: 1rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 0 3rem;
-  
+
 }
-.shareModalBox ul li{
+.shareModalBox ul li a div:first-child{
+  width: 40%;
+
+}
+.shareModalBox ul li a div:last-child{
+  width: 60%;
+  text-align: left;
+
+}
+
+.shareModalBox ul li {
   opacity: 0;
   transition: all 0.3s ease-in;
 }
-.shareModalBoxOpen .shareModalBox ul li:nth-child(7){
+
+.shareModalBoxOpen .shareModalBox ul li:nth-child(7) {
   opacity: 1;
   transition: 0.2s ease-in-out;
 }
-.shareModalBoxOpen .shareModalBox ul li:nth-child(6){
+
+.shareModalBoxOpen .shareModalBox ul li:nth-child(6) {
   opacity: 1;
   transition: 0.4s ease-in-out;
 }
-.shareModalBoxOpen .shareModalBox ul li:nth-child(5){
+
+.shareModalBoxOpen .shareModalBox ul li:nth-child(5) {
   opacity: 1;
   transition: 0.6s ease-in-out;
 }
-.shareModalBoxOpen .shareModalBox ul li:nth-child(4){
+
+.shareModalBoxOpen .shareModalBox ul li:nth-child(4) {
   opacity: 1;
   transition: 0.8s ease-in-out;
 }
-.shareModalBoxOpen .shareModalBox ul li:nth-child(3){
+
+.shareModalBoxOpen .shareModalBox ul li:nth-child(3) {
   opacity: 1;
   transition: 1s ease-in-out;
 }
-.shareModalBoxOpen .shareModalBox ul li:nth-child(2){
+
+.shareModalBoxOpen .shareModalBox ul li:nth-child(2) {
   opacity: 1;
   transition: 1.4s ease-in-out;
 }
-.shareModalBoxOpen .shareModalBox ul li:nth-child(1){
+
+.shareModalBoxOpen .shareModalBox ul li:nth-child(1) {
   opacity: 1;
   transition: 1.6s ease-in-out;
 }
-.cardVideo div{
+
+.cardVideo {
+  background-color: var(--white);
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cardVideo div {
   width: 100% !important;
   height: 100% !important;
 }
 
+.cardVideo div video {
+  border-radius: 10px;
+}
+
+.cardDataTime {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+}
+
+.cardDataTime h2 {
+  font-size: 14px !important;
+  font-family: nunitoBold;
+  color: var(--white);
+}
+
+.cardAddressBox {
+  background-color: var(--white);
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.productModalBoxOpen .productModalBox {
+  padding: 1.5rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000f5;
+  z-index: -1;
+  opacity: 0;
+  /* transition: 0.2s ease-in-out; */
+}
+
+.productModalBoxOpen .productModalBox {
+  z-index: 999999;
+  opacity: 1;
+}
+
+.productModalContent {
+  display: none;
+}
+
+.productModalBoxOpen .productModalContent {
+  display: block;
+}
+.productSliderBox{
+  /* border-radius: 6px; */
+  height: 168px;
+  overflow: hidden;
+  /* border: 1px solid var(--white); */
+}
+.productSliderBox img {
+  max-width: 100% !important;
+  /* border-radius: 6px; */
+}
+.productModalContent .swiper-pagination-bullet{
+  background-color: var(--white);
+}
+.productModalContent .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  top: 13rem;
+}
+.productModalContent .swiper{
+  overflow: visible;
+  margin-top: 1rem;
+}
+.cardShareBtn{
+  position: absolute;
+  right: 1rem;
+}
+.cardShareBtn img{
+  max-width: 20px;
+  transform: rotate(90deg);
+}
+.card_share_modal .offcanvas-backdrop.show{
+  opacity: 0.9;
+}
 /* ============responsive css==============
 ============================== */
 
@@ -580,10 +693,10 @@ button {
 
   /* ======new bmc====== */
 
-
-  .catalogSlider .swiper {
-    padding-top: 28px;
+  .card_share_modal .offcanvas-backdrop{
+    width: 345px !important;
   }
+
 
   /* ======end======= */
 
