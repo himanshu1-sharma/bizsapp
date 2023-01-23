@@ -1,6 +1,6 @@
 import styles from '../../styles/Footer.module.css';
 import Link from 'next/link';
-import { SocialMediaIconsReact } from 'social-media-icons-react';
+// import { SocialMediaIconsReact } from 'social-media-icons-react';
 
 export default function Footer() {
     return (
@@ -76,7 +76,7 @@ export default function Footer() {
                                         <p>Copyright © 2022 BizsApp. All Rights Reserved</p>
                                     </div>
 
-                                    <div className={styles.footer_social_media}>
+                                    {/* <div className={styles.footer_social_media}>
                                         <ul>
                                             <li>
                                                 <Link href="#">
@@ -114,7 +114,7 @@ export default function Footer() {
                                                 </Link>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
